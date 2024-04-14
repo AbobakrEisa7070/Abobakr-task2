@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conference Registration Form</title>
+</head>
+<body>
+  <h1>Conference Registration Form</h1>
+  <form name="conference registration form">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required><br>
+
+      <label for="emailAddress">Email Address:</label>
+      <input type="email" id="emailAddress" name="emailAddress" required><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="18" required><br>
+
+      <label for="gender">Gender:</label>
+      <input type="radio" id="genderMale" name="gender" value="male"> Male
+      <input type="radio" id="genderFemale" name="gender" value="female"> Female<br>
+
+      <label for="country">Country of Residence:</label>
+      <select name="country" id="country">
+        <option value="malaysia">Malaysia</option>
+        <option value="singapore">Singapore</option>
+        <option value="indonesia">Indonesia</option>
+        <option value="others">Others</option>
+      </select><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Areas of Interest</legend>
+      <label for="areasOfInterest">Select all that apply:</label><br>
+      <input type="checkbox" id="softwareDevelopment" name="areasOfInterest[]" value="Software Development"> Software Development<br>
+      <input type="checkbox" id="dataScience" name="areasOfInterest[]" value="Data Science"> Data Science<br>
+      <input type="checkbox" id="cybersecurity" name="areasOfInterest[]" value="Cybersecurity"> Cybersecurity<br>
+      <input type="checkbox" id="artificialIntelligence" name="areasOfInterest[]" value="Artificial Intelligence"> Artificial Intelligence<br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Experience Level</legend>
+      <label for="experienceLevel">Select your experience level:</label><br>
+      <input type="radio" id="experienceLevelBeginner" name="experienceLevel" value="beginner"> Beginner
+      <input type="radio" id="experienceLevelIntermediate" name="experienceLevel" value="intermediate"> Intermediate
+      <input type="radio" id="experienceLevelAdvanced" name="experienceLevel" value="advanced"> Advanced<br>
+    </fieldset>
+
+    <label for="comments">Comments or Questions:</label>
+    <textarea id="comments" name="comments" rows="5"></textarea><br>
+
+    <button type="submit">Register</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>
